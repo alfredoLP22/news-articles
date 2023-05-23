@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/articles',[ArticlesController::class, 'getArticles']);
+Route::get('/articles-search',[ArticlesController::class, 'getByBody']);
